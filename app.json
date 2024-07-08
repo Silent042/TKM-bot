@@ -10,14 +10,14 @@
     "PREFIX":
     {
       "description":"choose your prefix of bot",
-      "value":".",
+      "value":",",
       "required":true
     },
     "AUTO_READ_STATUS":
     {
       "description":"Your contact status will be read automatically(type yes to active or no to deactive  ; don't write in capital letter)",
       "value":"yes",
-      "required":false
+      "required":true
     }, "AUTO_DOWNLOAD_STATUS":
     {
       "description":"Your contact status will be download automatically and send to you(type yes to active or no to deactive ; don't write in capital letter)",
@@ -67,23 +67,23 @@
     "SESSION_ID":
     {
       "description":"put your session ID, the code you received after pairing code",   
-      "value":"",
+      "value":"eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiSUZ5RkJsL3BlUmQzaXhsbzVBRmsrUXVERFJmaUxPS1liNHJRSWZ2ZWRXbz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiSmp1djdqYTdudCtwcW5nbDNKbFRDTzg3ZE9TbGlqNW4xS2REZFN3Wk9XQT0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJrQWlRNmZMRWwzdmg3VFhUc1RmS3oxRHVtWlcxNGhvWEZEa0lGQ3hZbldrPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJOcFpYUm1MMnNha3UvNWVLZUNodGtjWFhxREkvWG5kV1ZtcDBoRnIvTFdRPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IitNcjA0ejVoZEFseE9uckVKS1o4VlFXUGRmOHZKQi9YVmloZUFkdkJkbFk9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Im9MRHpSTlRTTDZZV0hKZENpS0doMEI4OTJROWUvN1JqR1YrTE5yVUlmU3c9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiZ0xxTVo0ZitkRW1uNlNlSGNjL05EdG9wODJ0eXpIdG04WmpFWnJvMjEwND0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiR2puNHRLTnVzQWdMZlRoNVNkY1FNNzdlWmZTSHUrTzFaOVgrU3JMUmdEST0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Im5JVUdIRy9PNisrbzREeDZnWWlISkNmOERGM05wQ004SkNEK2JnZHFkMjBDUE9vSXl6cUNzSmZ4NTEwWVVpSVhOVmttaVBIOGtDU0t6ZnArbG5OVGdnPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MjQ2LCJhZHZTZWNyZXRLZXkiOiJ2V0RocEE3aERBTnBrbmhrcWtNdXFJVGFvTzA3VU5OclBQclhTVStmM1JVPSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W10sIm5leHRQcmVLZXlJZCI6MzEsImZpcnN0VW51cGxvYWRlZFByZUtleUlkIjozMSwiYWNjb3VudFN5bmNDb3VudGVyIjowLCJhY2NvdW50U2V0dGluZ3MiOnsidW5hcmNoaXZlQ2hhdHMiOmZhbHNlfSwiZGV2aWNlSWQiOiJWOUdud3NsRlNOZUk2RXY3OTVjNEVnIiwicGhvbmVJZCI6IjZhNzlkMDgwLTJjNmYtNGQwNS1hYWFiLTY1MTdmMTk3YmE2NCIsImlkZW50aXR5SWQiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJwK1pDSzc5Mkg0N0UzZjlZUEV3M1VXb2JHdm89In0sInJlZ2lzdGVyZWQiOnRydWUsImJhY2t1cFRva2VuIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiaXhDQVpMelFrOW94T2V2USt2TmU2MTUySmtFPSJ9LCJyZWdpc3RyYXRpb24iOnt9LCJwYWlyaW5nQ29kZSI6IkcyN05TVEFFIiwibWUiOnsiaWQiOiIyMzQ4MTY4ODU1NzkxOjYzQHMud2hhdHNhcHAubmV0In0sImFjY291bnQiOnsiZGV0YWlscyI6IkNQdlVuWVFFRUovdnNiUUdHQzBnQUNnQSIsImFjY291bnRTaWduYXR1cmVLZXkiOiIxT2doYlNVcFBsMlFQSmQ2T3JaMzl4ZGttc2dXNWU1amZrNG1YemJHVmlvPSIsImFjY291bnRTaWduYXR1cmUiOiI2YXdXdTQ4Y2N3VVN0U05LampBc2YyaEtWS1JkRkJmaHRaV014ZmFRNGdIeGJvU2EwcCt0a3UzUHh3K0lVSlFjU0duMmI4R1FXOUpqZCt1WUgzcWlEQT09IiwiZGV2aWNlU2lnbmF0dXJlIjoidHA1Nzh3cjhDZXhYemRISzUzMzNvdURhMGJVNk9TV2xleVVNSFl4M08yS0pGRUU4c0lPMENMWi9sNzI0ZTJJdDhQMmtmR1pBQzlpTTZaem53ODdnZ0E9PSJ9LCJzaWduYWxJZGVudGl0aWVzIjpbeyJpZGVudGlmaWVyIjp7Im5hbWUiOiIyMzQ4MTY4ODU1NzkxOjYzQHMud2hhdHNhcHAubmV0IiwiZGV2aWNlSWQiOjB9LCJpZGVudGlmaWVyS2V5Ijp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQmRUb0lXMGxLVDVka0R5WGVqcTJkL2NYWkpySUZ1WHVZMzVPSmw4MnhsWXEifX1dLCJwbGF0Zm9ybSI6ImFuZHJvaWQiLCJsYXN0QWNjb3VudFN5bmNUaW1lc3RhbXAiOjE3MjA0ODE3MDh9",
       "required":true
       
     },
     "OWNER_NAME":
     {
     
-    "desc": "Your Name",
+    "desc": "your name",
     "required": false,
-    "value": "Cod3Uchiha"
+    "value": "SILENT"
   },
     "NUMERO_OWNER":
   {
     
     "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
     "required":false,
-    "value": "263775571820,263785028126"
+    "value": "2348168855791"
   },
     "WARN_COUNT":
   {
