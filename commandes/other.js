@@ -11,31 +11,32 @@ zokou(
     },
 
     async (dest, zk, commandOptions) => {
-        const { ms, arg, reponder } = commandOptions;
-        if (!arg[0]) return reponder("*provide text or code to encode*");
+        const { ms, arg, repondre } = commandOptions;
+        if (!arg[0]) return repondre("*provide text or code to encode*");
 
         const text = arg.join(" ");
 
         let obfuscatedText = JavaScriptObfuscator.obfuscate(text, {
             compact: true,
             controlFlowFlattening: true,
-            deadCodeInjection: true,
+            controlFlowFlatteningThreshold: 0.5,
+            deadCodeInjection: false,
             debugProtection: false,
-            debugProtectionInterval: false,
+            debugProtectionInterval: 0,
             disableConsoleOutput: true,
             identifierNamesGenerator: "hexadecimal",
             log: false,
             renameGlobals: false,
-            rotateStringArray: true,
-            selfDefending: true,
+            selfDefending: false,
             stringArray: true,
+            stringArrayRotate: true,
             stringArrayEncoding: ["base64"],
-            stringArrayThreshold: 0.75,
+            stringArrayThreshold: 0.6,
             transformObjectKeys: true,
             unicodeEscapeSequence: false
         }).getObfuscatedCode();
 
-        await reponder(obfuscatedText);
+        await repondre(obfuscatedText);
         await react(dest, zk, ms, "👾");
     }
 );
